@@ -1,0 +1,119 @@
+.header {
+  position: relative;
+  z-index: 10;
+  padding: 40px 0;
+  background-color: white;
+  >div {
+    display: flex;
+    align-items: center;
+  }
+  &__burger {
+  }
+  &__body {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  };
+  &__logo {
+    &_link {
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  };
+  @media (min-width: $mq-2) {
+    &__search {
+      width: 368px;
+      height: 35px;
+    }
+  }
+  @media (max-width: $mq-1) {
+    padding: 30px 0;
+    &__logo {
+      width: 180px;
+      height: 30px;
+    }
+    &__burger {
+      flex: 0 1 64px;
+    }
+  }
+  @media (max-width: $mq-2) {
+    padding: 20px 0;
+    border-bottom: 1px solid #f4f5f7;
+  }
+}
+
+.search {
+  display: flex;
+  &__label {
+    flex: 1 1 auto;
+    display: none;
+  }
+  &__input {
+    padding: 10px 16px;
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    font-family: $font-open_sans;
+    &::placeholder {
+      color: #5e5d5c
+    }
+  };
+  &__button {
+    background-color: transparent;
+    svg {
+      g {
+        fill: $color-primary;
+      }
+    }
+  }
+  &:not(._to-icon) {
+    border-radius: 2px;
+    border: 1px solid #a1a1a1;
+    .search__button {
+      height: 100%;
+      width: 76px;
+      background-color: $color-primary;
+      svg {
+        g {
+          fill: white;
+        }
+      }
+    }
+    .search__label {
+      display: block;
+    }
+  }
+}
+#header-search-clone {
+  margin-top: -40px;
+  transform: translateY(-120%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+  &._active {
+    margin-top: 20px;
+    transform: translateY(0);
+    opacity: 1;
+  }
+  ._container {
+    display: flex;
+  }
+  margin-bottom: -20px;
+  background-color: #f4f5f7;
+  border: none;
+  padding: 10px 0;
+  .search__input {
+    height: 32px;
+    border: 1px solid #a1a1a1;
+    border-right: none;
+  }
+  button {
+    height: 32px;
+    border: 1px solid #a1a1a1;
+    border-left: none;
+  }
+}
