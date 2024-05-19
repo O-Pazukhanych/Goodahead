@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+</head>
+<body>
+    <header class="py-10 z-10 bg-white relative tablet-max:py-[30px] mobile-max:py-5 mobile-max:border-b border-border">
+        <div class="_container flex items-center">
+            <div class="tablet-max:grow-0 tablet-max:shrink tablet-max:basis-16">
+                <div class="menu-burger">
+                    <span class="menu-burger__lines"></span>
+                </div>
+            </div>
+            <section class="flex-auto flex items-center justify-between">
+                <div class="tablet-max:w-[180px] tablet-max:h-[30px]">
+                    <a href="/">
+                        <img class="object-contain w-full h-full" src="/public/image/logo.svg" alt="logo"/>
+                    </a>
+                </div>
+                <div class="search mobile:h-[35px] mobile:w-[368px]" id="header-search">
+                    <label for="search" class="search__label">
+                        <input class="search__input" name="search" id="search" type="text" placeholder="Search"/>
+                    </label>
+                    <button type="button" class="search__button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256">
+                            <g fill="#fff">
+                                <g transform="scale(10.66667,10.66667)">
+                                    <path d="M10,2c-4.40347,0 -8,3.59653 -8,8c0,4.40347 3.59653,8 8,8c1.75213,0 3.37052,-0.57793 4.69141,-1.54102l5.1543,5.1543c0.31352,0.32654 0.77908,0.45808 1.21713,0.34388c0.43805,-0.1142 0.78014,-0.45628 0.89433,-0.89433c0.1142,-0.43805 -0.01734,-0.90361 -0.34388,-1.21713l-5.1543,-5.1543c0.96309,-1.32088 1.54102,-2.93928 1.54102,-4.69141c0,-4.40347 -3.59653,-8 -8,-8zM10,4.5c3.05237,0 5.5,2.44763 5.5,5.5c0,3.05237 -2.44763,5.5 -5.5,5.5c-3.05237,0 -5.5,-2.44763 -5.5,-5.5c0,-3.05237 2.44763,-5.5 5.5,-5.5z"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </header>
+    <nav class="menu tablet:bg-border tablet:sticky tablet:top-0 tablet:z-50 tablet:mt-0" id="burger-menu">
+        <div class="_container">
+            <ul class="menu__list -mt-[50%] ease-out duration-500 tablet:m-0 tablet:flex mobile-max:-mt-[133%]">
+                <li class="uppercase bg-border tablet:flex-auto tablet:border-l tablet:border-[#eee] tablet:border-b-0">
+                    <a class="
+                        py-4 px-6 block ease duration-300 font-bold whitespace-nowrap border-b border-white
+                        hover:bg-[#eaecf0] hover:text-primary active:bg-[#eaecf0] active:text-primary
+                        tablet:py-6 tablet:px-0 tablet:flex tablet:items-center tablet:justify-center
+                    " href="/">Home</a>
+                </li>
+                <li class="uppercase bg-border tablet:flex-auto tablet:border-l tablet:border-[#eee] tablet:border-b-0">
+                    <a class="
+                        py-4 px-6 block ease duration-300 font-bold whitespace-nowrap border-b border-white
+                        hover:bg-[#eaecf0] hover:text-primary active:bg-[#eaecf0] active:text-primary
+                        tablet:py-6 tablet:px-0 tablet:flex tablet:items-center tablet:justify-center
+                    " href="#">Services</a>
+                </li>
+                <li class="uppercase bg-border tablet:flex-auto tablet:border-l tablet:border-[#eee] tablet:border-b-0">
+                    <a class="
+                        py-4 px-6 block ease duration-300 font-bold whitespace-nowrap border-b border-white
+                        hover:bg-[#eaecf0] hover:text-primary active:bg-[#eaecf0] active:text-primary
+                        tablet:py-6 tablet:px-0 tablet:flex tablet:items-center tablet:justify-center
+                    " href="#">Portfolio</a>
+                </li>
+                <li class="uppercase bg-border tablet:flex-auto tablet:border-l tablet:border-[#eee] tablet:border-b-0">
+                    <a class="
+                        py-4 px-6 block ease duration-300 font-bold whitespace-nowrap border-b border-white
+                        hover:bg-[#eaecf0] hover:text-primary active:bg-[#eaecf0] active:text-primary
+                        tablet:py-6 tablet:px-0 tablet:flex tablet:items-center tablet:justify-center
+                    " href="#">Gallery</a>
+                </li>
+                <li class="uppercase bg-border tablet:flex-auto tablet:border-l tablet:border-[#eee] tablet:border-b-0">
+                    <a class="
+                        py-4 px-6 block ease duration-300 font-bold whitespace-nowrap border-b border-white
+                        hover:bg-[#eaecf0] hover:text-primary active:bg-[#eaecf0] active:text-primary
+                        tablet:py-6 tablet:px-0 tablet:flex tablet:items-center tablet:justify-center
+                    " href="#">Help & FAQ</a>
+                </li>
+                <li class="uppercase bg-border tablet:flex-auto tablet:border-l tablet:border-[#eee] tablet:border-b-0">
+                    <a class="
+                        py-4 px-6 block ease duration-300 font-bold whitespace-nowrap border-b border-white
+                        hover:bg-[#eaecf0] hover:text-primary active:bg-[#eaecf0] active:text-primary
+                        tablet:py-6 tablet:px-0 tablet:flex tablet:items-center tablet:justify-center
+                    " href="#">About</a>
+                </li>
+                <li class="uppercase bg-border tablet:flex-auto tablet:border-l tablet:border-[#eee] tablet:border-b-0 tablet:border-r">
+                    <a class="
+                        py-4 px-6 block ease duration-300 font-bold whitespace-nowrap border-b border-white
+                        hover:bg-[#eaecf0] hover:text-primary active:bg-[#eaecf0] active:text-primary
+                        tablet:py-6 tablet:px-0 tablet:flex tablet:items-center tablet:justify-center
+                    " href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="_container">
+            <section class="text-center	mt-[100px] tablet-max:mt-[65px]">
+                <h2 class="label mb-[45px] tablet-max:mb-10 mobile-max:mb-[30px]">Buttons</h2>
+                <div class="mobile-max:text-left mobile-max:-mb-5">
+                    <button class="btn btn-primary mr-5 mobile-max:mb-5"><span>primary</span></button>
+                    <button class="btn mr-5 mobile-max:mb-5"><span>Default</span></button>
+                    <button class="btn btn-success mr-5 mobile-max:mb-5"><span>Success</span></button>
+                    <button class="btn btn-info mr-5 mobile-max:mb-5"><span>info</span></button>
+                    <button class="btn btn-warning mr-5 mobile-max:mb-5"><span>Warning</span></button>
+                    <button class="btn btn-error"><span>Danger</span></button>
+                </div>
+            </section>
+            <section class="text-center mt-[100px] tablet-max:mt-20 mobile-max:mt-[50px]">
+                <h2 class="label mb-[45px] tablet-max:mb-10 mobile-max:mt-[30px]">Inputs</h2>
+                <div class="mobile:flex mobile:justify-center mobile:my-0 mobile:-mx-[14px]">
+                    <div class="mb-10 mobile:px-[14px]">
+                        <label for="checkbox-1" class="checkbox _input-check flex text-[15px] open-sans text-text2 mb-[14px]" title="Checkbox">
+                            <input id="checkbox-1" type="checkbox" name="checkbox" value="1" checked>
+                            <span class="checkbox-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 6" width="8" height="6">
+                                    <path d="m0 3.3l1.3-1.3 2.7 2.7-1.3 1.3-2.7-2.7m3.3 2.7l-1.3-1.3 4.7-4.7 1.3 1.3-4.7 4.7" fill="currentColor"/>
+                                </svg>
+                            </span>
+                            <span class="content-label ml-[10px] inline-block"></span>
+                        </label>
+                        <label for="checkbox-2" class="checkbox _input-check flex text-[15px] open-sans text-text2" title="Checkbox">
+                            <input id="checkbox-2" type="checkbox" name="checkbox" value="2">
+                            <span class="checkbox-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 6" width="8" height="6">
+                                    <path d="m0 3.3l1.3-1.3 2.7 2.7-1.3 1.3-2.7-2.7m3.3 2.7l-1.3-1.3 4.7-4.7 1.3 1.3-4.7 4.7" fill="currentColor"/>
+                                </svg>
+                            </span>
+                            <span class="content-label  ml-[10px] inline-block"></span>
+                        </label>
+                    </div>
+                    <div class="mb-10  mobile:px-[14px]">
+                        <label for="radio-1" class="radio _input-check flex text-[15px] open-sans text-text2 mb-[14px]" title="Radio">
+                            <input id="radio-1" type="radio" name="radio" value="1" checked><span class="radio-mark"></span>
+                            <span class="content-label  ml-[10px] inline-block"></span>
+                        </label>
+                        <label for="radio-2" class="radio _input-check flex text-[15px] open-sans text-text2" title="Radio">
+                            <input id="radio-2" type="radio" name="radio" value="2"><span class="radio-mark"></span>
+                            <span class="content-label  ml-[10px] inline-block"></span>
+                        </label>
+                    </div>
+                    <div class="mobile:px-[14px]">
+                        <label for="switcher-1" class="switcher _input-check flex text-[15px] open-sans text-text2 mb-[14px]" title="Switcher">
+                            <input id="switcher-1" type="checkbox" name="switcher" value="1" checked><span class="switcher-slider"></span>
+                            <span class="content-label  ml-[10px] inline-block"></span>
+                        </label>
+                        <label for="switcher-2" class="switcher _input-check flex text-[15px] open-sans text-text2" title="Switcher">
+                            <input id="switcher-2" type="checkbox" name="switcher" value="2"><span class="switcher-slider"></span>
+                            <span class="content-label  ml-[10px] inline-block"></span>
+                        </label>
+                    </div>
+                </div>
+            </section>
+            <section class="text-center mt-[100px] tablet-max:mt-[75px] mobile-max:mt-[50px]">
+                <h2 class="label mb-[45px] tablet-max:mb-[35px]">Star rating</h2>
+                <div>
+                    <div class="flex justify-center items-center mb-5 mobile-max:justify-start mobile-max:mb-[15px]">
+                        <div class="rating" data-stars="5"></div>
+                        <span class="ml-4 text-[15px] text-text2 open-sans">Show rating</span>
+                    </div>
+                    <div class="flex justify-center items-center mobile-max:justify-start">
+                        <div class="rating" data-stars="5" data-start_position="3"></div>
+                        <span class="ml-4 text-[15px] text-text2 open-sans">Check rating</span>
+                    </div>
+                </div>
+            </section>
+            <section class="carousel text-center mt-[100px] mb-[114px] tablet-max:mt-20 tablet-max:mb-14 mobile-max:my-[50px]">
+                <h2 class="label mb-6 tablet-max:mb-[45px] mobile-max:mb-5">Carousel</h2>
+                <div class="relative">
+                    <div class="swiper carousel-swiper px-20 h-[280px] max-w-[900px] tablet-max:h-[232px] mobile-max:h-[440px] mobile-max:max-w-[300px] tablet-max:px-15 mobile-max:p-0">
+                        <div class="swiper-wrapper h-full">
+                            <div class="swiper-slide h-full tablet:py-5 tablet:px-0">
+                                <div style="scrollbar-width: thin" class="h-full border border-border px-[15px] pt-[30px] pb-[20px] mobile:flex mobile:p-0 mobile-max:max-h-full mobile-max:overflow-auto">
+                                    <div class="self-center mobile-max:h-auto py-4 px-6 h-full tablet:px-[45px] tablet:py-0 tablet:self-center mobile-max:px-0 mobile-max:pt-0 mobile-max:pb-5">
+                                        <div class="tablet:relative tablet:w-[280px] mobile-max:flex mobile-max:justify-center">
+                                            <img class="w-[508px] h-[190px] mobile-max:w-[190px] rounded-full overflow-hidden tablet:absolute tablet:top-[-18px] tablet:left-0 tablet:w-[280px] tablet:h-[280px]" src="https://swiperjs.com/demos/images/nature-1.jpg" alt="icon_1"/>
+                                        </div>
+                                    </div>
+                                    <div style="scrollbar-width: thin" class="text-left flex-auto px-5 pt-12 pb-10 text-[16px] text-text3 myriad mobile:max-h-full mobile:overflow-auto mobile-max:p-0">
+                                        <p class="text-subText">
+                                            When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a time.
+                                        </p>
+                                        <h4 class="text-[20px] uppercase text-text3 font-bold mt-4 mb-3">Chewbacca</h4>
+                                        <span>July 2017</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide h-full tablet:py-5 tablet:px-0">
+                                <div style="scrollbar-width: thin" class="h-full border border-border px-[15px] pt-[30px] pb-[20px] mobile:flex mobile:p-0 mobile-max:max-h-full mobile-max:overflow-auto">
+                                    <div class="self-center mobile-max:h-auto py-4 px-6 h-full tablet:px-[45px] tablet:py-0 tablet:self-center mobile-max:px-0 mobile-max:pt-0 mobile-max:pb-5">
+                                        <div class="tablet:relative tablet:w-[280px] mobile-max:flex mobile-max:justify-center">
+                                            <img class="w-[508px] h-[190px] mobile-max:w-[190px] rounded-full overflow-hidden tablet:absolute tablet:top-[-18px] tablet:left-0 tablet:w-[280px] tablet:h-[280px]" src="https://swiperjs.com/demos/images/nature-2.jpg" alt="icon_1"/>
+                                        </div>
+                                    </div>
+                                    <div style="scrollbar-width: thin" class="text-left flex-auto px-5 pt-12 pb-10 text-[16px] text-text3 myriad mobile:max-h-full mobile:overflow-auto mobile-max:p-0">
+                                        <p class="text-subText">
+                                            When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a time.
+                                        </p>
+                                        <h4 class="text-[20px] uppercase text-text3 font-bold mt-4 mb-3">Chewbacca</h4>
+                                        <span>July 2017</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide h-full tablet:py-5 tablet:px-0">
+                                <div style="scrollbar-width: thin" class="h-full border border-border px-[15px] pt-[30px] pb-[20px] mobile:flex mobile:p-0 mobile-max:max-h-full mobile-max:overflow-auto">
+                                    <div class="self-center mobile-max:h-auto py-4 px-6 h-full tablet:px-[45px] tablet:py-0 tablet:self-center mobile-max:px-0 mobile-max:pt-0 mobile-max:pb-5">
+                                        <div class="tablet:relative tablet:w-[280px] mobile-max:flex mobile-max:justify-center">
+                                            <img class="w-[508px] h-[190px] mobile-max:w-[190px] rounded-full overflow-hidden tablet:absolute tablet:top-[-18px] tablet:left-0 tablet:w-[280px] tablet:h-[280px]" src="https://swiperjs.com/demos/images/nature-3.jpg" alt="icon_1"/>
+                                        </div>
+                                    </div>
+                                    <div style="scrollbar-width: thin" class="text-left flex-auto px-5 pt-12 pb-10 text-[16px] text-text3 myriad mobile:max-h-full mobile:overflow-auto mobile-max:p-0">
+                                        <p class="text-subText">
+                                            When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a time.
+                                        </p>
+                                        <h4 class="text-[20px] uppercase text-text3 font-bold mt-4 mb-3">Chewbacca</h4>
+                                        <span>July 2017</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide h-full tablet:py-5 tablet:px-0">
+                                <div style="scrollbar-width: thin" class="h-full border border-border px-[15px] pt-[30px] pb-[20px] mobile:flex mobile:p-0 mobile-max:max-h-full mobile-max:overflow-auto">
+                                    <div class="self-center mobile-max:h-auto py-4 px-6 h-full tablet:px-[45px] tablet:py-0 tablet:self-center mobile-max:px-0 mobile-max:pt-0 mobile-max:pb-5">
+                                        <div class="tablet:relative tablet:w-[280px] mobile-max:flex mobile-max:justify-center">
+                                            <img class="w-[508px] h-[190px] mobile-max:w-[190px] rounded-full overflow-hidden tablet:absolute tablet:top-[-18px] tablet:left-0 tablet:w-[280px] tablet:h-[280px]" src="https://swiperjs.com/demos/images/nature-4.jpg" alt="icon_1"/>
+                                        </div>
+                                    </div>
+                                    <div style="scrollbar-width: thin" class="text-left flex-auto px-5 pt-12 pb-10 text-[16px] text-text3 myriad mobile:max-h-full mobile:overflow-auto mobile-max:p-0">
+                                        <p class="text-subText">
+                                            When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a time.
+                                        </p>
+                                        <h4 class="text-[20px] uppercase text-text3 font-bold mt-4 mb-3">Chewbacca</h4>
+                                        <span>July 2017</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next w-[42px] h-[42px] border border-border mobile-max:hidden"></div>
+                        <div class="swiper-button-prev w-[42px] h-[42px] border border-border mobile-max:hidden"></div>
+                    </div>
+                    <div class="carousel__pagination mt-[30px] relative mobile-max:mt-5"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="pt-[50px] pb-[70px] bg-border tablet-max:py-[50px] mobile-max:py-[30px]">
+        <div class="_container flex justify-between tablet-max:items-center tablet-max:flex-col-reverse mobile-max:items-start mobile-max:max-w-none mobile-max:p-0">
+            <div class="footer-info w-full tablet:-mx-[58px] mobile:flex">
+                <div class="tablet:px-[58px] tablet-max:mr-[58px] mobile-max:mr-0">
+                    <div class="min-w-[174px]">
+                        <h4 class="footer-info__label text-[16px] font-bold py-4 px-0 border border-white mobile:mb-6 mobile:text-primary mobile:p-0 mobile:border-0" data-name="spoiler-title"><span>Shop</span></h4>
+                        <ul class="spoiler-body">
+                            <li class="mb-6 mobile-max:border mobile-max:border-white mobile-max:py-4 mobile-max:mb-0"><a href="#" class="footer-info__link text-[16px] hover:font-bold mobile-max:block">Browse By Holidays</a></li>
+                            <li class="mb-6 mobile-max:border mobile-max:border-white mobile-max:py-4 mobile-max:mb-0"><a href="#" class="footer-info__link text-[16px] hover:font-bold mobile-max:block">Browse By Brand</a></li>
+                            <li class="mb-6 mobile-max:border mobile-max:border-white mobile-max:py-4 mobile-max:mb-0"><a href="#" class="footer-info__link text-[16px] hover:font-bold mobile-max:block">Gift of the Month Clubs</a></li>
+                            <li class="mb-6 mobile-max:border mobile-max:border-white mobile-max:py-4 mobile-max:mb-0"><a href="#" class="footer-info__link text-[16px] hover:font-bold mobile-max:block">Customized Bottles</a></li>
+                            <li class="mobile-max:border mobile-max:border-white mobile-max:py-4"><a href="#" class="footer-info__link text-[16px] hover:font-bold mobile-max:block">Corporate Gifts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tablet:px-[58px] tablet-max:mr-[58px] mobile-max:mr-0">
+                    <div class="min-w-[174px]">
+                        <h4 class="footer-info__label text-[16px] font-bold py-4 px-0 border border-white mobile:mb-6 mobile:text-primary mobile:p-0 mobile:border-0" data-name="spoiler-title"><span>About</span></h4>
+                        <ul class="spoiler-body">
+                            <li class="mb-6 mobile-max:border mobile-max:border-white mobile-max:py-4 mobile-max:mb-0"><a href="#" class="footer-info__link text-[16px] hover:font-bold mobile-max:block">About Spirited Gifts</a></li>
+                            <li class="mb-6 mobile-max:border mobile-max:border-white mobile-max:py-4 mobile-max:mb-0"><a href="#" class="footer-info__link text-[16px] hover:font-bold mobile-max:block">Read our Blog</a></li>
+                            <li class="mb-6 mobile-max:border mobile-max:border-white mobile-max:py-4 mobile-max:mb-0"><a href="#" class="footer-info__link text-[16px] hover:font-bold mobile-max:block">About our Selection</a></li>
+                            <li class="mb-6 mobile-max:border mobile-max:border-white mobile-max:py-4 mobile-max:mb-0"><a href="#" class="footer-info__link text-[16px] hover:font-bold mobile-max:block">Read our Reviews</a></li>
+                            <li class="mobile-max:border mobile-max:border-white mobile-max:py-4"><a href="#" class="footer-info__link text-[16px] hover:font-bold mobile-max:block">Shipping & Returns</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tablet:px-[58px]">
+                    <div class="footer-info__item">
+                        <h4 class="footer-info__label text-[16px] font-bold py-4 px-0 border border-white mobile:mb-6 mobile:text-primary mobile:p-0 mobile:border-0" data-name="spoiler-title"><span>More</span></h4>
+                        <ul class="spoiler-body">
+                            <li class="mb-6 mobile-max:border mobile-max:border-white mobile-max:py-4 mobile-max:mb-0"><a href="#" class="footer-info__link text-[16px] hover:font-bold mobile-max:block">Privacy Policy</a></li>
+                            <li class="mb-6 mobile-max:border mobile-max:border-white mobile-max:py-4 mobile-max:mb-0"><a href="#" class="footer-info__link text-[16px] hover:font-bold mobile-max:block">Retailer Network</a></li>
+                            <li class="mb-6 mobile-max:border mobile-max:border-white mobile-max:py-4 mobile-max:mb-0"><a href="#" class="footer-info__link text-[16px] hover:font-bold mobile-max:block">Help and FAQs</a></li>
+                            <li class="mb-6 mobile-max:border mobile-max:border-white mobile-max:py-4 mobile-max:mb-0"><a href="#" class="footer-info__link text-[16px] hover:font-bold mobile-max:block">Scholarship</a></li>
+                            <li class="mobile-max:border mobile-max:border-white mobile-max:py-4"><a href="#" class="footer-info__link text-[16px] hover:font-bold mobile-max:block">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tablet-max:w-full tablet-max:text-center">
+                <div>
+                    <h4 class="text-[16px] mb-6 font-bold text-primary">Follow us</h4>
+                    <ul class="flex tablet-max:justify-center tablet-max:mb-[50px] mobile-max:mb-6">
+                        <li class="mr-[10px]"><a href="#" class="ease duration-300 hover:bg-primary flex items-center justify-center rounded-sm bg-bgIcon border border-borderIcon w-10 h-[35px]"><img class="max-w-5 max-h-5" src="/src/icons/facebook.svg" alt="facebook"></a></li>
+                        <li class="mr-[10px]"><a href="#" class="ease duration-300 hover:bg-primary flex items-center justify-center rounded-sm bg-bgIcon border border-borderIcon w-10 h-[35px]"><img class="max-w-5 max-h-5" src="/src/icons/twitter.svg" alt="twitter"></a></li>
+                        <li class="mr-[10px]"><a href="#" class="ease duration-300 hover:bg-primary flex items-center justify-center rounded-sm bg-bgIcon border border-borderIcon w-10 h-[35px]"><img class="max-w-5 max-h-5" src="/src/icons/instagram.svg" alt="instagram"></a></li>
+                        <li><a href="#" class="ease duration-300 hover:bg-primary flex items-center justify-center rounded-sm bg-bgIcon border border-borderIcon w-10 h-[35px]"><img class="max-w-5 max-h-5" src="/src/icons/pinterest.svg" alt="pinterest"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

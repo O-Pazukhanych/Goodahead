@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("/public/fonts/Montserrat-Regular.woff") format('woff'),url("/public/fonts/Montserrat-Regular.woff2") format('woff2');
+}
+$font-montserrat: 'Montserrat';
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("/public/fonts/MyriadPro-Semibold.woff") format('woff'),url("/public/fonts/MyriadPro-Semibold.woff2") format('woff2');
+}
+$font-myriad: 'Myriad Pro';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100&display=swap');
+$font-roboto: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+$font-open_sans: 'Open Sans', sans-serif;

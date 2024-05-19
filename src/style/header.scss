@@ -1,0 +1,123 @@
+.search {
+  display: flex;
+  &__label {
+    flex: 1 1 auto;
+    display: none;
+  }
+  &__input {
+    padding: 10px 16px;
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    font-family: $font-open_sans;
+    &::placeholder {
+      color: #5e5d5c
+    }
+  };
+  &__button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      g {
+        fill: $color-primary;
+      }
+    }
+  }
+  &:not(._to-icon) {
+    border-radius: 2px;
+    border: 1px solid #a1a1a1;
+    .search__button {
+      height: 100%;
+      width: 76px;
+      background-color: $color-primary;
+      svg {
+        g {
+          fill: white;
+        }
+      }
+    }
+    .search__label {
+      display: block;
+    }
+  }
+}
+#header-search-clone {
+  margin-top: -40px;
+  transform: translateY(-120%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+  &._active {
+    margin-top: 20px;
+    transform: translateY(0);
+    opacity: 1;
+  }
+  ._container {
+    display: flex;
+  }
+  margin-bottom: -20px;
+  background-color: #f4f5f7;
+  border: none;
+  padding: 10px 0;
+  .search__input {
+    height: 32px;
+    border: 1px solid #a1a1a1;
+    border-right: none;
+  }
+  button {
+    height: 32px;
+    border: 1px solid #a1a1a1;
+    border-left: none;
+  }
+}
+
+.menu-burger {
+  position: relative;
+  height: 12px;
+  width: 16px;
+  margin-left: 10px;
+  transition: all 0.3s ease 0s;
+  &__lines {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $color-primary;
+    border-radius: 12px;
+  }
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: $color-primary;
+    border-radius: 12px;
+  }
+  &:before {
+    top: 0;
+  }
+  &:after {
+    bottom: 0;
+  }
+  &._active {
+    .menu-burger__lines {
+      transform: scale(0);
+    }
+    &:before, &:after {
+      height: 4px;
+    }
+    &:before {
+      top: 45%;
+      transform: rotate(45deg) translate(0, -50%);
+    }
+    &:after {
+      bottom: 50%;
+      transform: rotate(-45deg) translate(0, 50%);
+    }
+  }
+  @media (min-width: $mq-1) {
+    display: none;
+  }
+}

@@ -1,0 +1,45 @@
+* {padding: 0;margin: 0;border: 0;}
+*, *::before, *::after {-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus, :active {outline: none;}
+a:focus, a:active {outline: none;}
+header, footer, nav, aside, section {display: block;}
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: $minWidth;
+  position: relative;
+  color: $mainFontColor;
+}
+body {
+  line-height: 1;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  height: fit-content;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+main {
+  flex: 1 1 auto;
+}
+input::-ms-clear {display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited {text-decoration: none; color: $mainFontColor;}
+a:hover {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+h1, h2, h3, h4, h5, h6 {font-size: inherit;font-weight: inherit;}
+input[type=text], input[type=email], input[type=tel], textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+body._lock {
+  overflow: hidden;
+}

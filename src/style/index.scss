@@ -1,0 +1,59 @@
+@import "fonts";
+@import 'var';
+@import '../../node_modules/swiper/swiper-bundle.css';
+
+@import "header";
+@import "footer";
+
+.menu {
+  &._active {
+    margin-top: 0 !important;
+    .menu__list {
+      margin-top: 0 !important;
+    }
+  }
+}
+.carousel {
+  &__pagination {
+    &>.swiper-pagination-bullet {
+      width: 76px;
+      height: 76px;
+      margin: 0 10px !important;
+      background-size: cover;
+      opacity: 1;
+      &-active {
+        border: 3px solid $color-primary;
+      }
+      &-active-next, &-active-next-next, &-active-prev, &-active-prev-prev {
+        opacity: 0;
+      }
+    }
+  }
+  @media (max-width: $mq-2) {
+    &__pagination {
+      &>.swiper-pagination-bullet {
+        width: 60px;
+        height: 60px;
+        margin: 0 18px 0 0 !important;
+        &:last-child {
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+}
+.carousel-swiper {
+  .swiper-button-next,.swiper-button-prev {
+    &:after {
+      color: transparent;
+      background-image: url("/src/icons/swiper-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  .swiper-button-next {
+    &:after {
+      transform: rotateZ(-180deg);
+    }
+  }
+}

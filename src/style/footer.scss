@@ -1,0 +1,45 @@
+.footer-info {
+  @media (min-width: $mq-2) {
+    &__label {
+      svg {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: $mq-2) {
+    &__label {
+      &._active {
+        color: $color-primary;
+        svg {
+          transform: translateY(-50%) rotate(90deg);
+        }
+      }
+      span {
+        display: block;
+        max-width: 300px + calc($contentPadding * 2);
+        margin: 0 auto;
+        padding: 0 calc($contentPadding + 16px);
+        position: relative;
+      }
+      svg {
+        top: 50%;
+        position: absolute;
+        right: 32px;
+        transform: translateY(-50%) rotate(-90deg);
+      }
+    }
+    &__link {
+      max-width: 300px + calc($contentPadding * 2);
+      margin: 0 auto;
+      padding: 0 calc($contentPadding + 32px);
+    }
+  }
+}
+.spoiler-body {
+  @media (max-width: $mq-2) {
+    display: none;
+    &._active {
+      display: block;
+    }
+  }
+}
